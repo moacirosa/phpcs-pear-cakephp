@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<ruleset name="CakePHPPear">
+
+    <description>The PEAR coding standard with some adjustments to work with 
+    CakePHP.</description>
+
+    <rule ref="PEAR"/>
+
+    <rule ref="PEAR">
+        <exclude name="PEAR.NamingConventions.ValidFunctionName"/>
+    </rule>
+
+    <!-- Lines can be 85 chars long, but never show errors -->
+    <rule ref="Generic.Files.LineLength">
+     <properties>
+      <property name="lineLimit" value="80"/>
+      <property name="absoluteLineLimit" value="100"/>
+     </properties>
+    </rule>
+
+    <!-- Non Empty if's -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement">
+     <severity>5</severity>
+    </rule>
+
+    <!-- Non unused parameter -->
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
+     <severity>5</severity>
+    </rule>
+
+    <!-- Alignment -->
+    <rule ref="Generic.Formatting.MultipleStatementAlignment">
+     <severity>5</severity>
+    </rule>
+
+    <!-- Bad Spaces -->
+    <rule ref="Generic.Formatting.NoSpaceAfterCast">
+     <severity>5</severity>
+    </rule>
+
+    <rule ref="Generic.Formatting.SpaceAfterCast">
+     <severity>5</severity>
+    </rule>
+
+    <!-- Non Deprecated -->
+    <rule ref="Generic.PHP.DeprecatedFunctions">
+     <severity>5</severity>
+    </rule>
+
+    <!-- Well ident -->
+    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent">
+     <severity>5</severity>
+    </rule>
+
+</ruleset>
