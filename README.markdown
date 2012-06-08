@@ -17,7 +17,7 @@ In my case (Ubuntu 10.10) standards are located in
 By example:
 
     $ cd /usr/share/php/PHP/CodeSniffer/Standards
-        $ git clone git@github.com:moacirosa/phpcs-pear-cakephp.git CakePHPPear
+        $ git clone git@github.com/moacirosa/phpcs-pear-cakephp.git CakePHPPear
 
 > Keep the target folder (CakePHPPear) with this name to avoid problems like: 
 > "Cannot redeclare class..." 
